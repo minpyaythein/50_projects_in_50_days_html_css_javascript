@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Ubuntu', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	overflow: hidden;
+	margin: 0;
+}
+
+.bg {
+	background: url('https://a-z-animals.com/media/2022/06/Potbelly-pig-with-babies-1024x614.jpg') no-repeat center center/cover;
+	position: absolute;
+	top: -30px;
+	left: -30px;
+	width: calc(100vw + 60px);
+	height: calc(100vh + 60px);
+	z-index: -1;
+	filter: blur(30px);
+}
+
+.loading-text {
+	font-size: 50px;
+	color: #fff;
+}
+
+.button {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #007bff; /* Set the background color */
+	color: #fff; /* Set the text color */
+	font-size: 16px; /* Set the font size */
+	border: none; /* Remove the default border */
+	border-radius: 4px; /* Add rounded corners */
+	cursor: pointer;
+	transition: background-color 0.3s ease; /* Add a smooth transition effect */
+	text-decoration: none;
+	margin-right: 30px;
+}
+
+.button:hover {
+	background-color: #0056b3; /* Change the background color on hover */
+}
+
+/* Additional styles for different button states (optional) */
+.button:active {
+	background-color: #003f80; /* Change the background color on click */
+}
+
+.button:focus {
+	outline: none; /* Remove the default focus outline */
+	box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add a box shadow on focus */
+}
